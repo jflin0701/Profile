@@ -3,11 +3,12 @@ body {
 }
 
 h1 {
-  color: white;
+  color: rgb(104, 36, 36);
   text-align: center;
   text-shadow: 0 0 3px #FF0000;
 }
 p {
+  color: aqua;
   font-family: verdana;
   font-size: 20px;
 }
