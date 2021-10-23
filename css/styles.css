@@ -1,12 +1,17 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(73, 73, 73);
 }
 
 h1 {
-  color: rgb(104, 36, 36);
-  text-align: center;
-  text-shadow: 0 0 3px #FF0000;
-}
+  font-family:Baskerville,Times,'Times New Roman',serif;
+  font-size:40px;
+  color:#71c1f7;
+  font-variant:small-caps;
+  text-align:center;
+  font-weight:bold;
+  padding:0px 0px 0px 0px; /* Tweak this to your liking */
+  }
+
 p {
   color: aqua;
   font-family: verdana;
@@ -20,10 +25,18 @@ p.solid {border-style: solid;}
   align-items: center;
   height: 0px;
 }
+
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
 button {
-  background-color: #4a9bf7; /* Green */
-  border: 2px solid #4441f1;
-  color: rgb(255, 255, 255);
+  background-color: #36567a; /* Green */
+  border: none;
+  color: rgb(209, 204, 204);
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -35,3 +48,34 @@ button {
 
 
 .button1 {border-radius: 8px;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: top;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #71c1f7;
+}

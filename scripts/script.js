@@ -1,9 +1,10 @@
-const board_border = 'black';
+    const board_border = 'black';
     const board_background = "lightgrey";
     const snake_head = 'lightgreen';
     const snake_col = 'lightblue';
     const snake_border = 'darkblue';
-    
+    const colors = ['red','green','blue','pink','black'];
+
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -68,9 +69,20 @@ const board_border = 'black';
       snake.forEach(drawSnakePart)
     }
 
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+
+    function getRandomColor() {
+      var color = '';
+      color = colors[getRandomInt(colors.length)];
+      return color;
+    }
+
     function drawFood() {
-      snakeboard_ctx.fillStyle = 'red';
-      snakeboard_ctx.strokestyle = 'darkred';
+      var color = getRandomColor();
+      snakeboard_ctx.fillStyle = color;
+      snakeboard_ctx.strokestyle = 'white';
       snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
       snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
     }
