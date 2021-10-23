@@ -1,11 +1,12 @@
 body {
-  background-color: rgb(73, 73, 73);
+  height: 95.5vh;
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
 }
 
 h1 {
   font-family:Baskerville,Times,'Times New Roman',serif;
   font-size:40px;
-  color:#71c1f7;
+  color:#ffffff;
   font-variant:small-caps;
   text-align:center;
   font-weight:bold;
